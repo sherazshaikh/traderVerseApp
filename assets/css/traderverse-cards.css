@@ -1,0 +1,251 @@
+.episode-card {
+	position: relative;
+	background-color: #0b0022;
+	color: #fff;
+	overflow: hidden;
+	cursor: pointer;
+	top: 0;
+	transition: all 0.25s ease;
+}
+
+.episode-card .poster {
+	position: relative;
+}
+
+.episode-card .poster::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	z-index: 1;
+	-webkit-box-shadow: inset 0px -10px 20px 20px rgba(0, 0, 0, 0.35),
+		3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px -10px 20px 20px rgba(0, 0, 0, 0.35),
+		3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.episode-card .poster img {
+	width: 100%;
+}
+
+.episode-card .poster > *:not(:first-child) {
+	position: absolute;
+	z-index: 1;
+}
+
+.episode-card .poster .play-btn {
+	width: 48px;
+	top: 85px;
+	left: calc(50% - 26px);
+	transition: transform 0.15s;
+}
+
+.episode-card .poster .play-btn:hover {
+	transform: scale(1.2);
+}
+
+.episode-card .poster .length {
+	top: 10px;
+	right: 12px;
+	background-color: rgba(18, 0, 54, 0.7);
+	padding: 3px 6px;
+	border-radius: 10px;
+	font-size: 0.9rem;
+}
+
+.episode-card .poster .released {
+	top: 82%;
+	left: 12px;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+	border-radius: 3px 5px;
+	font-size: 0.8rem;
+}
+
+.episode-card .poster .host {
+	position: absolute;
+	padding: 0;
+	top: 78%;
+	right: 24px;
+	list-style: none;
+}
+
+.episode-card .poster .host li {
+	display: inline;
+	margin-right: -35px;
+	transition: all 0.2s ease-in-out;
+}
+.episode-card .poster .host li:last-child {
+	display: inline;
+	margin-right: 0px;
+}
+.episode-card .poster .host:hover li {
+	display: inline;
+	margin-right: 0px;
+	transition: all 0.2s ease-in-out;
+}
+.episode-card .poster .host img {
+	width: 40px;
+	border-radius: 40px;
+	/* margin-right: -12px; */
+	box-shadow: -3px 4px 4px 0px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.episode-card .poster .host li:not(:first-child):not(:last-child):hover img {
+	margin-right: -4;
+	margin-left: 8px;
+	opacity: 1;
+}
+
+.episode-card .poster .host li:first-child:hover img {
+	/* margin-right: -4; */
+	opacity: 1;
+}
+
+.episode-card .poster .host li:last-child:hover img {
+	/* margin-left: 8px; */
+	opacity: 1;
+}
+
+.episode-card .title {
+	padding: 25px 16px 0 16px;
+}
+
+.episode-card .title h5 {
+	display: flex;
+	color: #ffe0cf;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.episode-card .title h5 img {
+	margin-right: 15px;
+}
+
+.episode-card .details {
+	/* height: 35px; */
+	padding: 0 16px 16px 16px;
+	transition: height 0.35s ease;
+}
+.episode-card:hover {
+	position: relative;
+	top: -150px;
+	transition: all 0.35s ease-in-out;
+}
+.episode-card:hover .details {
+	height: auto;
+	transition: all 0.35s ease-in-out;
+}
+
+.episode-card .sub-details {
+	margin: 16px 0 13px 0;
+	opacity: 0.8;
+	font-size: 0.9rem;
+}
+
+.episode-card .sub-details > .show-title {
+	float: left;
+}
+
+.episode-card .sub-details > .rating {
+	float: right;
+}
+
+.episode-card .categories span {
+	background-color: #b300ff;
+	padding: 2px 6px;
+	box-shadow: -3px 4px 4px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+
+.episode-card .desc {
+	margin-top: 16px;
+	font-size: 14px;
+}
+
+.event-list {
+	width: 100%;
+}
+
+.event-list li {
+	margin: 10px 0 0 -6px;
+	padding: 6px 0 6px 6px;
+	cursor: pointer;
+}
+
+.event-list li:hover {
+	background-color: #0b0022;
+}
+
+.event-list div {
+	font-size: 0.9rem;
+}
+
+.event-list div:first-child {
+	font-weight: bolder;
+	text-align: center;
+	font-size: 0.6rem;
+	margin-top: 5px;
+	color: #f6cdb7;
+}
+
+.event-list li div:first-child h5 {
+	padding: 0;
+	margin: -5px;
+}
+
+.event-list div:nth-child(2) {
+	padding: 6px 8px;
+	position: relative;
+}
+
+.event-list div:nth-child(2) img {
+	width: 30px;
+}
+
+.event-list .event-info {
+	font-weight: 700;
+	padding: 3px 0 0 0;
+}
+
+.event-list .event-info p {
+	padding: 0;
+	margin: -3px 0 0 0;
+	font-weight: 400;
+	font-size: 0.8rem;
+	opacity: 0.5;
+}
+
+.live-dot {
+	border-radius: 50px;
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	top: 2px;
+	right: 6px;
+	border: 2px solid #120036;
+}
+
+.green-dot {
+	background-color: rgb(117, 235, 0);
+}
+
+.grey-dot {
+	background-color: grey;
+}
+
+.red-dot {
+	background-color: red;
+}
+
+.yellow-dot {
+	background-color: yellow;
+}

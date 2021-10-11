@@ -1,0 +1,98 @@
+.episode_details {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 35px;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.breadcrumb ul {
+    width: 100%;
+    min-width: 400px;
+}
+
+.breadcrumb li {
+    list-style: none;
+    display: inline;
+}
+
+.breadcrumb li:not(:first-child):before {
+    content: "\003E";
+    margin: 0 8px;
+    opacity: 0.4;
+}
+
+.breadcrumb li:first-child {
+    margin-left: -30px;
+}
+
+.prop-title {
+    margin-top: 20px;
+    text-transform: uppercase;
+    opacity: 0.3;
+}
+
+.prop-tile {
+    float: left;
+    padding: 10px;
+}
+
+.prop-tile img {
+    float: left;
+    margin-right: 10px;
+}
+
+.prop-tile h5 {
+    margin: 5px 0 0 0;
+}
+
+.prop-tile p {
+    margin: 0;
+}
+
+.video-btns a {
+    display: block;
+    padding: 8px;
+    float: right;
+    background-color: rgba(29, 4, 77, 0.9);
+    text-align: center;
+    margin: 10px 0 0 10px;
+    min-width: 90px;
+}
+
+.video-btns a i {
+    margin: 0 5px;
+}
+
+.video-props .about {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.video-props .title {
+    color: #ffb387;
+}
+
+.video-info {
+    padding: 10px 0;
+}
+
+.video-duration {
+    margin-top: 18px;
+}
+
+.video-duration span {
+    margin: 0 5px;
+    opacity: 0.5;
+}
+
+.video-card .item {
+    float: left;
+    max-width: 360px;
+    margin: 0 20px 20px 0;
+}
+
+.video-card .item div.cover-wrapper img {
+    width: 290px;
+}

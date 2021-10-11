@@ -1,0 +1,51 @@
+.user-avatar {
+    border-radius: 50%;
+}
+
+.creator-avatar {
+    border-radius: 40%;
+}
+
+.channel-avatar {
+    border-radius: 20px;
+}
+
+.show-avatar {
+    position: relative;
+}
+
+.video-avatar {}
+
+.audio-avatar {}
+
+.avatar-xs {
+    width: 25px;
+}
+
+.avatar-sm {
+    width: 40px;
+}
+
+.avatar-md {
+    width: 55px;
+}
+
+.avatar-lg {
+    width: 70px;
+}
+
+.avatar-xl {
+    width: 100px;
+}
+
+.avatar-xxl {
+    width: 130px;
+}
+
+.avatar-xxxl {
+    width: 160px;
+}
+
+.avatar-xxxxl {
+    width: 190px;
+}

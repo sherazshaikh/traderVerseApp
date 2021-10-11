@@ -1,0 +1,27 @@
+.tab-wrap{
+    background-color: transparent;
+}
+.episode_details{
+    background-color: transparent;
+}
+
+.video-btns a{
+    background-color: #fff;
+    color: rgba(29, 4, 77, 0.9);
+}
+.s_stats{
+    overflow: hidden;
+}
+.s_stats div{
+    float: left;
+}
+.breadcrumb li {
+    display: inline-block;
+    max-width: 40%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.video-props{
+    margin-top: 20px;
+}
